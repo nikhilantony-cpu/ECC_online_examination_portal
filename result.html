@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your result | Quizora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page result-page">
+    <header class="app-header"><a class="brand" href="student-dashboard.html"><span class="brand-mark">Q</span> quizora</a><a class="header-link" href="index.html">Sign out ↗</a></header>
+    <main class="result-shell">
+        <div class="result-kicker"><span class="success-icon">✓</span><span>Examination submitted</span></div>
+        <h1>Nice work, <span id="resultName">student</span>.</h1>
+        <p class="result-lede">Here is your performance snapshot for <strong id="resultSubject">the mock examination</strong>.</p>
+        <section class="result-grid"><div class="score-panel"><span class="eyebrow">Your score</span><strong id="totalMarks">0 / 0</strong><div class="progress-track"><span id="scoreBar"></span></div><span id="scorePercent">0% correct</span></div><div class="result-message"><span class="eyebrow">A note for you</span><h2 id="resultMessage">Keep going.</h2><p id="resultDetail">Every attempt is a useful signal. Review the questions and take another run when you are ready.</p></div></section>
+        <div class="result-actions"><a class="secondary-button" href="student-dashboard.html">Back to my exams</a><a class="primary-button" href="exam.html">Try again <span>→</span></a></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

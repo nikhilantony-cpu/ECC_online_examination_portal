@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher sign in | Quizora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page teacher-auth">
+    <main class="auth-layout">
+        <a class="brand auth-brand" href="index.html"><span class="brand-mark">Q</span> quizora</a>
+        <section class="auth-art">
+            <p class="eyebrow">Teacher workspace</p>
+            <h1>Questions worth asking.</h1>
+            <p>Turn your lesson plan into a thoughtful assessment. Add subjects, shape questions, and keep your class moving forward.</p>
+            <div class="art-stat"><strong>∞</strong><span>Room for better questions</span></div>
+        </section>
+        <section class="auth-card">
+            <a class="back-link" href="index.html">← Back to role selection</a>
+            <div class="panel-heading"><p class="eyebrow">Teacher sign in</p><h2>Your classroom, in one place.</h2><p>Sign in to create and manage your mock examinations.</p></div>
+            <form id="teacherLoginForm" class="stack-form">
+                <label>Full name<input id="teacherName" type="text" placeholder="e.g. Dr. Meera Iyer" required></label>
+                <label>Institution email<input id="teacherEmail" type="email" placeholder="you@school.edu" required></label>
+                <label>Password<input id="teacherPassword" type="password" placeholder="••••••••" required></label>
+                <button class="primary-button" type="submit">Open teacher workspace <span>→</span></button>
+            </form>
+            <p class="demo-credentials"><strong>Demo email:</strong> demo@quizora.local &nbsp; <strong>Password:</strong> teacher123</p>
+            <p class="form-footnote">Demo mode: any valid details will let you continue.</p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

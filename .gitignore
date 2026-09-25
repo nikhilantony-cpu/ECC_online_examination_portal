@@ -1,0 +1,6 @@
+data.json
+quizora.sqlite
+quizora.sqlite-shm
+quizora.sqlite-wal
+*.tmp
+node_modules/

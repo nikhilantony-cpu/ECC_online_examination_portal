@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher workspace | Quizora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page dashboard-page teacher-dashboard">
+    <header class="app-header">
+        <a class="brand" href="index.html"><span class="brand-mark">Q</span> quizora</a>
+        <div class="user-menu"><span class="avatar teacher-avatar" id="teacherAvatar">M</span><span id="teacherHeaderName">Teacher</span><a class="header-link" href="index.html">Sign out</a></div>
+    </header>
+    <main class="dashboard-shell">
+        <section class="welcome-row">
+            <div><p class="eyebrow">Teacher workspace</p><h1>Shape a better test.</h1><p>Add questions that make your students think.</p></div>
+            <button class="primary-button" id="focusQuestionForm">+ Add a question</button>
+        </section>
+        <section class="dashboard-stats">
+            <div><span>Questions in bank</span><strong id="questionBankCount">0</strong></div>
+            <div><span>Subjects</span><strong id="subjectCount">0</strong></div>
+            <div><span>Registered students</span><strong id="registeredStudentCount">0</strong></div>
+        </section>
+        <div class="teacher-grid">
+            <section class="content-panel" id="questionFormPanel">
+                <div class="section-heading"><div><p class="eyebrow">Question builder</p><h2>Add to your question bank</h2></div><span class="section-caption">All fields are required</span></div>
+                <form id="questionForm" class="question-builder">
+                    <label>Subject<input id="questionSubject" type="text" placeholder="e.g. Computer Science" required></label>
+                    <div id="questionBlocks" class="question-blocks"></div>
+                    <button class="add-question-button" id="addQuestionButton" type="button">+ Add another question</button>
+                    <div class="form-actions"><span id="formStatus" class="form-status"></span><button class="primary-button" type="submit">Publish all questions <span>→</span></button></div>
+                </form>
+            </section>
+            <aside class="content-panel question-bank-panel">
+                <div class="section-heading"><div><p class="eyebrow">Recent work</p><h2>Question bank</h2></div></div>
+                <div id="teacherQuestionList" class="teacher-question-list"></div>
+            </aside>
+        </div>
+        <section class="content-panel roster-panel">
+            <div class="section-heading">
+                <div><p class="eyebrow">Class activity</p><h2>Student attendance & marks</h2><p class="section-subtitle">Every student who signs in appears here, including students who have not attempted an exam.</p></div>
+                <div class="roster-summary"><span class="completed-summary"><strong id="completedStudentCount">0</strong> completed</span><span class="unattended-summary"><strong id="unattendedStudentCount">0</strong> unattended</span></div>
+            </div>
+            <div class="roster-table-wrap">
+                <table class="roster-table">
+                    <thead><tr><th>Student</th><th>Register no.</th><th>Latest subject</th><th>Marks</th><th>Status</th></tr></thead>
+                    <tbody id="studentRoster"></tbody>
+                </table>
+                <div id="emptyRoster" class="empty-roster">Student activity will appear here after students sign in.</div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

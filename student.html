@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student sign in | Quizora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page student-auth">
+    <main class="auth-layout">
+        <a class="brand auth-brand" href="index.html"><span class="brand-mark">Q</span> quizora</a>
+        <section class="auth-art">
+            <p class="eyebrow">Student workspace</p>
+            <h1>Practice with purpose.</h1>
+            <p>Pick up a mock exam, focus on the questions, and leave with a clearer picture of what to work on next.</p>
+            <div class="art-stat"><strong>10 min</strong><span>Focused practice sessions</span></div>
+        </section>
+        <section class="auth-card">
+            <a class="back-link" href="index.html">← Back to role selection</a>
+            <div class="panel-heading"><p class="eyebrow">Student sign in</p><h2>Ready when you are.</h2><p>Enter your details to see the exams waiting for you.</p></div>
+            <form id="studentLoginForm" class="stack-form">
+                <label>Full name<input id="studentName" type="text" placeholder="e.g. Ananya Sharma" required></label>
+                <label>Register number<input id="registerNo" type="text" placeholder="e.g. CS24-018" required></label>
+                <label>Email address<input id="email" type="email" placeholder="you@school.edu" required></label>
+                <label>Password<input id="studentPassword" type="password" placeholder="••••••••" required></label>
+                <button class="primary-button" type="submit">Enter student workspace <span>→</span></button>
+            </form>
+            <p class="demo-credentials"><strong>Demo ID:</strong> STU-001 &nbsp; <strong>Password:</strong> student123</p>
+            <p class="form-footnote">Your progress is saved on this device for the demo.</p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

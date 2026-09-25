@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take exam | Quizora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-page exam-page">
+    <header class="app-header"><a class="brand" href="student-dashboard.html"><span class="brand-mark">Q</span> quizora</a><div class="header-meta"><span class="live-dot"></span><span id="examSubject">Mock examination</span><span class="header-divider"></span><strong id="timer">10:00</strong></div></header>
+    <main class="exam-shell">
+        <div class="exam-topline"><a class="back-link" href="student-dashboard.html">← Exit exam</a><span id="questionProgress">Question 1 of 1</span></div>
+        <section class="exam-intro"><div><p class="eyebrow">Mock examination</p><h1 id="examTitle">Loading exam...</h1><p id="examDescription">Read each question carefully. You have one attempt.</p></div><div class="exam-score"><strong id="questionCount">0</strong><span>questions<br>2 marks each</span></div></section>
+        <form id="examForm" class="exam-form"></form>
+        <div class="exam-submit-row"><p><span class="soft-dot"></span>Your answers are saved when you submit.</p><button class="primary-button" type="submit" form="examForm">Submit examination <span>→</span></button></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
