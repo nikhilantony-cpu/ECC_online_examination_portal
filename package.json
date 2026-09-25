@@ -8,5 +8,9 @@
   },
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "@vercel/analytics": "^2.0.1"
   }
 }

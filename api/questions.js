@@ -1,0 +1,1 @@
+const repo = require('../lib/repository'); const { json, fail, body } = require('../lib/supabase'); module.exports = async (req, res) => { if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed.' }); try { return json(res, 201, await repo.questions(body(req))); } catch (error) { return fail(res, error); } };
