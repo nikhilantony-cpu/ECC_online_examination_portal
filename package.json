@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
-    "@vercel/analytics": "^2.0.1"
+    "@vercel/analytics": "^2.0.1",
+    "dotenv": "^18.0.5",
+    "workflow": "^4.8.9"
   }
 }
